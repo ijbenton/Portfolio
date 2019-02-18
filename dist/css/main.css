@@ -143,14 +143,14 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh- 60px); }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      transition: all 0.5s ease-out; }
       main .icons a:hover {
-        color: #0774a7;
-        transition: all 0.5s ease-out; }
+        color: #0774a7; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -164,7 +164,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 20%;
+    border-radius: 50%;
     border: #0774a7 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -191,6 +191,25 @@ main {
       opacity: 0.5;
       border-color: #0774a7;
       transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #0774a7;
+      color: #fff; }
+      .boxes div:hover span {
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -257,7 +276,12 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
