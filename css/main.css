@@ -23,6 +23,8 @@
       }
     }
   } */ }
+  .menu-btn:hover {
+    color: #0774a7; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -110,7 +112,7 @@ body {
   font-family: "Roboto Slab", serif, "Trebuchet MS", Helvetica, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/mt-hood-lake.jpg);
+    background: url(../img/oregon-coast.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -153,7 +155,9 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - 60px);
+  align-items: center;
+  text-align: center; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -254,12 +258,9 @@ main {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -293,5 +294,7 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+  .boxes div {
+    font-size: 1.5rem; }
   .projects {
     grid-template-columns: 1fr; } }

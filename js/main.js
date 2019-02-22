@@ -32,10 +32,7 @@ function toggleMenu() {
     while (menuBtn.firstChild) {
       menuBtn.removeChild(menuBtn.firstChild);
     }
-    htmlCloseIcon.innerHTML =
-      ' <div class="btn-line"></div>' +
-      ' <div class="btn-line"></div>' +
-      ' <div class="btn-line"></div>';
+    htmlCloseIcon.innerHTML = ' <i class="fas fa-bars fa-2x"></i>';
 
     menuBtn.appendChild(htmlCloseIcon);
     //menuBtn.classList.remove("close");
