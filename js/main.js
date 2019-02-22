@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
+var htmlCloseIcon = document.createElement("div");
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -12,7 +13,14 @@ menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
-    menuBtn.classList.add("close");
+    //menuBtn.classList.add("close");
+    //Empty resultsList and attribute list
+    while (menuBtn.firstChild) {
+      menuBtn.removeChild(menuBtn.firstChild);
+    }
+    htmlCloseIcon.innerHTML = '  <i class="fas fa-times fa-2x"></i>';
+
+    menuBtn.appendChild(htmlCloseIcon);
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
@@ -21,7 +29,16 @@ function toggleMenu() {
     //Set Menu State
     showMenu = true;
   } else {
-    menuBtn.classList.remove("close");
+    while (menuBtn.firstChild) {
+      menuBtn.removeChild(menuBtn.firstChild);
+    }
+    htmlCloseIcon.innerHTML =
+      ' <div class="btn-line"></div>' +
+      ' <div class="btn-line"></div>' +
+      ' <div class="btn-line"></div>';
+
+    menuBtn.appendChild(htmlCloseIcon);
+    //menuBtn.classList.remove("close");
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");

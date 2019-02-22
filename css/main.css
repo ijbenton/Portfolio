@@ -4,21 +4,31 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  /* &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      //Line 1 - Rotate
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      //Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      //Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  } */ }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
     transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
-      opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
   position: fixed;
@@ -97,10 +107,10 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto Slab", serif, "Trebuchet MS", Helvetica, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/hills.jpg);
+    background: url(../img/mt-hood-lake.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
