@@ -15,9 +15,6 @@
 //Tablets & Small Laptops
 @include mediaMd {
   main {
-    align-items: center;
-    text-align: center;
-
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
@@ -81,6 +78,11 @@
     }
   }
 
+  .boxes {
+    div {
+      font-size: 1.5rem;
+    }
+  }
   .projects {
     grid-template-columns: 1fr;
   }

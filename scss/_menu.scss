@@ -7,6 +7,10 @@
   cursor: pointer;
   @include easeOut;
 
+  &:hover {
+    color: $secondary-color;
+  }
+
   .btn-line {
     width: 28px;
     height: 3px;
