@@ -13,8 +13,7 @@ menuBtn.addEventListener("click", toggleMenu);
 
 function toggleMenu() {
   if (!showMenu) {
-    //menuBtn.classList.add("close");
-    //Empty resultsList and attribute list
+    //Empty menu button
     while (menuBtn.firstChild) {
       menuBtn.removeChild(menuBtn.firstChild);
     }
@@ -35,7 +34,6 @@ function toggleMenu() {
     htmlCloseIcon.innerHTML = ' <i class="fas fa-bars fa-2x"></i>';
 
     menuBtn.appendChild(htmlCloseIcon);
-    //menuBtn.classList.remove("close");
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
