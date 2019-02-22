@@ -52,11 +52,16 @@ main {
   padding: 4rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
-  align-items: center;
-  text-align: center;
 
+  h1,
+  h2 {
+    align-items: center;
+    text-align: center;
+  }
   .icons {
     margin-top: 1rem;
+    align-items: center;
+    text-align: center;
 
     a {
       padding: 0.4rem;
@@ -79,10 +84,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bioimage bio";
+  grid-template-columns: repeat(1, 1fr);
 
   .bio-image {
     grid-area: bioimage;
@@ -94,24 +97,6 @@ main {
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
   }
 }
 
@@ -144,7 +129,7 @@ main {
   div {
     font-size: 2rem;
     border: 3px #fff solid;
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     margin-bottom: 3rem;
     @include easeOut;
 
@@ -189,6 +174,20 @@ main {
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      padding: 0 1rem;
+      @include easeOut;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }
 
 @import "mobile";
