@@ -11,8 +11,10 @@ $background-opacity: 0.8;
 @mixin background {
   @if $show-home-image {
     &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
+      background: $home-image no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
       //Puts in psuedo element thats after bg-img
       &:after {
