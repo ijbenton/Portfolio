@@ -91,8 +91,10 @@ body {
   font-family: "Roboto Slab", serif, "Trebuchet MS", Helvetica, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/oregon-coast.jpg);
-    background-attachment: fixed;
+    background: url(../img/oregon-coast.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
     body#bg-img:after {
       content: "";
