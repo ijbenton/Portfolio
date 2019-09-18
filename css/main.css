@@ -241,7 +241,7 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: 'bioimage' 'bio';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 768px) {
@@ -249,7 +249,7 @@ main {
     line-height: 1;
     margin-bottom: 1rem; }
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: 'bioimage' 'bio';
     grid-template-columns: 1fr;
     grid-gap: 10px; }
   ul.menu-nav,
