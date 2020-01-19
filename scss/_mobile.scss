@@ -4,7 +4,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 //Desktops & Laptops
 @include mediaLg {
   .projects {
@@ -12,8 +11,8 @@
   }
   .about-info {
     grid-template-areas:
-      "bioimage"
-      "bio";
+      'bioimage'
+      'bio';
     grid-template-columns: 1fr;
   }
 }
@@ -28,8 +27,8 @@
   }
   .about-info {
     grid-template-areas:
-      "bioimage"
-      "bio";
+      'bioimage'
+      'bio';
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
@@ -55,7 +54,7 @@
     transform: translate3d(100%, 0, 0);
 
     .portrait {
-      background: url("../img/portrait_small.png");
+      background: url('../img/portrait_small.png');
       width: 175px;
       height: 142px;
     }
